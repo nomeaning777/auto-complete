@@ -194,7 +194,7 @@ export class NguiAutoCompleteComponent implements OnInit {
     }
 
     public reloadListInDelay = (evt: any): void => {
-        const delayMs = this.isSrcArr() ? 10 : 500;
+        const delayMs = 10; // this.isSrcArr() ? 10 : 500;
         const keyword = evt.target.value;
 
         // executing after user stopped typing
